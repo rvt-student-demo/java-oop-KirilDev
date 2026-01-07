@@ -1,2 +1,2 @@
-# java-console
-project template for Java CLI app
+# Java OOP
+Java CLI app repository

@@ -12,4 +12,12 @@ public class Person {
         this.address = address;
         this.email = email;
     }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public String getAddress(){
+        return this.address;
+    }
 }

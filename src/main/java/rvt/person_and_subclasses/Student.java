@@ -1,5 +1,4 @@
-package rvt.school_program;
-
+package rvt.person_and_subclasses;
 public class Student extends Person{
 
     private String course;

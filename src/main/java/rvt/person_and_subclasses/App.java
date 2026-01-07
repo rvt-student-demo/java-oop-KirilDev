@@ -1,4 +1,4 @@
-package rvt.school_program;
+package rvt.person_and_subclasses;
 
 public class App {
     public static void main(String[] args){

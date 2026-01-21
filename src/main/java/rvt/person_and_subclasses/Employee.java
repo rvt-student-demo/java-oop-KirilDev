@@ -16,7 +16,7 @@ public class Employee extends Teacher{
     public String toString(){
         return super.toString() 
         + "\n Role: " + this.role 
-        + "\n This employee works: " + this.timeOpportunity 
-        + "\n Working hours of employee: " + this.workingHours;
+        + "\n Commitment: " + this.timeOpportunity 
+        + "\n Working hours: " + this.workingHours;
     }
 }

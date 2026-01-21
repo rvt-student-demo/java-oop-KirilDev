@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args){
-        Student kirill = new Student("Kirill", "private");
-        Student ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
+        Student kirill = new Student("Kirill", "private", "Computer Science");
+        Student ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028", "Entpreneurship and management");
         ollie.study();
         ollie.study();
         ollie.study();

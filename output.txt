@@ -1,0 +1,29 @@
+
+Ada Lovelace
+  24 Maddox St. London W1S 2QN
+  salary 1200 euro/month
+
+Esko Ukkonen
+  Mannerheimintie 15 00100 Helsinki
+  salary 4800 euro/month
+
+Ollie
+  6381 Hollywood Blvd. Los Angeles 90028
+  Course: Entrepreneurship and management
+  Study credits 3
+
+Kirill
+  private
+  Course: Computer Science
+  Study credits 2
+
+Origo
+  Krisjana street
+  salary 1300 euro/month
+
+Jacob
+  Krisjana Street
+  salary 1400 euro/month
+ Role: IT Department Administration
+ This employee works: Full-time
+ Working hours of employee: 9am-17pm

@@ -1,38 +1,45 @@
 package rvt.person_and_subclasses;
 
 import java.util.ArrayList;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class App {
-    public static void main(String[] args){
-        Student kirill = new Student("Kirill", "private", "Computer Science");
-        Student ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028", "Entrepreneurship and management");
-        ollie.study();
-        ollie.study();
-        ollie.study();
+    public static void main(String[] args) throws IOException{
+        // single writer managed by try-with-resources
+        try (FileWriter writer = new FileWriter("output.txt")) {
 
-        kirill.study();
-        kirill.study();
+         Student kirill = new Student("Kirill", "private", "Computer Science");
+         Student ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028", "Entrepreneurship and management");
+         ollie.study();
+         ollie.study();
+         ollie.study();
 
-        Teacher Ada = new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200);
-        Teacher Esko = new Teacher("Esko Ukkonen", "Mannerheimintie 15 00100 Helsinki", 4800);
-        Teacher Origo = new Teacher("Origo", "Krisjana street", 1300);
+         kirill.study();
+         kirill.study();
 
-        Employee Jacob = new Employee("Jacob", "Krisjana Street", 1400, "IT Department Administration", "Full-time", "9am-17pm");
+         Teacher Ada = new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200);
+         Teacher Esko = new Teacher("Esko Ukkonen", "Mannerheimintie 15 00100 Helsinki", 4800);
+         Teacher Origo = new Teacher("Origo", "Krisjana street", 1300);
 
-        ArrayList<Person> persons = new ArrayList<Person>();
-        persons.add(Ada);
-        persons.add(Esko);
-        persons.add(ollie);
-        persons.add(kirill);
-        persons.add(Origo);
-        persons.add(Jacob);
+         Employee Jacob = new Employee("Jacob", "Krisjana Street", 1400, "IT Department Administration", "Full-time", "9am-17pm");
 
-        printPersons(persons);
+         ArrayList<Person> persons = new ArrayList<Person>();
+         persons.add(Ada);
+         persons.add(Esko);
+         persons.add(ollie);
+         persons.add(kirill);
+         persons.add(Origo);
+         persons.add(Jacob);
 
-    }
-    public static void printPersons(ArrayList<Person> persons){
+         printPersons(persons, writer);
+        }
+
+     }
+    public static void printPersons(ArrayList<Person> persons, FileWriter writer) throws IOException{
     for (Person person : persons){
         System.out.println(person);
+        writer.write(person + System.lineSeparator());
     }
 }
     

@@ -17,6 +17,7 @@ public class Person {
         return this.address;
     }
 
+    @Override
     public String toString(){
          return this.name + "\n  "+ this.address;
     }

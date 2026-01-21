@@ -17,12 +17,15 @@ public class App {
         Teacher Esko = new Teacher("Esko Ukkonen", "Mannerheimintie 15 00100 Helsinki", 4800);
         Teacher Origo = new Teacher("Origo", "Krisjana street", 1300);
 
+        Employee Jacob = new Employee("Jacob", "Krisjana Street", 1400, "IT Department Administration", "Full-time", "9am-17pm");
+
         ArrayList<Person> persons = new ArrayList<Person>();
         persons.add(Ada);
         persons.add(Esko);
         persons.add(ollie);
         persons.add(kirill);
         persons.add(Origo);
+        persons.add(Jacob);
 
         printPersons(persons);
 

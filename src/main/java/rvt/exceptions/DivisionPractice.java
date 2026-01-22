@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class DivisionPractice {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        Double numberator;
+        Double numerator;
         Double divisor;
 
         while (true) {
@@ -19,7 +19,7 @@ public class DivisionPractice {
                     break;
                 }
 
-                numberator = Double.parseDouble(numeratorInput);
+                numerator = Double.parseDouble(numeratorInput);
 
                System.out.println("Enter the divisor: ");
                String divisorInput = scan.nextLine().trim();
@@ -27,7 +27,7 @@ public class DivisionPractice {
 
                 if ( divisor == 0 ) throw new ArithmeticException();
 
-               System.out.println(numberator + " / " + divisor + " is " + numberator / divisor);
+               System.out.println(numerator + " / " + divisor + " is " + numerator / divisor);
             } catch (InputMismatchException e) {
                 System.out.println("You entered bad data.");
                 System.out.println("Please try again.");
